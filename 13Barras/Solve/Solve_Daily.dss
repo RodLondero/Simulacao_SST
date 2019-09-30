@@ -1,0 +1,7 @@
+Set maxcontrol=100
+Set maxiterations=100
+
+!Set controlmode=static
+Set controlmode=off
+Set mode=daily stepsize=1.0h number=24
+

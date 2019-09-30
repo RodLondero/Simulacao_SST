@@ -1,0 +1,68 @@
+
+Clear
+
+// ---------------------------------------------------------------------
+// Circuito
+// ---------------------------------------------------------------------
+Redirect Elementos/Subestacao.dss
+
+// ------------------------]---------------------------------------------
+// Configurações
+// ---------------------------------------------------------------------
+Set emergvminpu = 0.7
+Set emergvmaxpu = 1.2
+Set normvminpu  = 0.8
+Set normvmaxpu  = 1.1
+// ---------------------------------------------------------------------
+// Bibliotecas
+// ---------------------------------------------------------------------
+!Redirect Bibliotecas/LineCodes.dss
+!Redirect Bibliotecas/LineCodes1.dss
+Redirect Bibliotecas/LineCodes2.dss
+Redirect Bibliotecas/LoadShapes.dss
+
+// ---------------------------------------------------------------------
+// Elementos
+// ---------------------------------------------------------------------
+Redirect Elementos/Transformadores.dss
+Redirect Elementos/Linhas.dss
+Redirect Elementos/Reguladores.dss
+Redirect Elementos/Capacitores.dss
+Redirect Elementos/Cargas.dss
+Redirect Elementos/Chaves.dss
+
+// ---------------------------------------------------------------------
+// Monitores e Medidores
+// ---------------------------------------------------------------------
+Redirect Monitores/Monitor_Subestacao.dss
+Redirect Monitores/Monitor_Cargas.dss
+Redirect Medidores/EnergyMeters.dss
+
+// ---------------------------------------------------------------------
+// Tens?es de base
+// ---------------------------------------------------------------------
+// Set Voltagebases=[115, 4.16, .48, .38]
+// calcvoltagebases
+
+// ---------------------------------------------------------------------
+// Solve
+// ---------------------------------------------------------------------
+// Redirect Solve/Solve_Daily.dss    !Di?rio
+
+// Solve
+
+// ---------------------------------------------------------------------
+// Resultados
+// ---------------------------------------------------------------------
+// !Export monitors subestacao_potencia
+// !Export monitors subestacao_tensao
+
+// Plot monitor object=Subestacao_Potencia channels=(1 3 5)
+// !Plot monitor object=Subestacao_Potencia channels=(2 4 6)
+// !Plot monitor object=Subestacao_Tensao   channels=(1 3 5)  bases=[66395 66395 66395]
+// !Plot profile phases=all
+
+
+// Plot monitor object= carga611_tensao channels=(1)
+
+BusCoords Bibliotecas/IEEE13Node_BusXY.csv

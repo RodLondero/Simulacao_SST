@@ -1,0 +1,49 @@
+//--------------------------------------------------------------------------------------------------//
+// Dados dos transformadores
+//--------------------------------------------------------------------------------------------------//
+
+// Transformador da Subestação
+New Transformer.Subestacao phases=3 windings=2  xhl=0.0001
+~ wdg=1 bus=SourceBus   conn=delta  kV=115    	kVA=1000000   %r=0.0000005
+~ wdg=2 bus=650         conn=wye    kV=4.16   	kVA=1000000   %r=0.0000005
+
+New Transformer.TR611 	phases=1 	windings=2 	xhl=0.0001
+~ wdg=1 bus=611.3       conn=wye    kV=4.16     kVA=225   %r=.0005
+~ wdg=2 bus=C611.3      conn=wye    kV=0.38     kVA=225   %r=.0005
+
+// // Transformador entre as barras 633 e 634
+New Transformer.TR634 	phases=3 	windings=2 	xhl=0.0001
+~ wdg=1 bus=633         conn=wye    kV=4.16     kVA=2000   %r=.0005
+~ wdg=2 bus=C634        conn=wye    kV=0.38     kVA=2000   %r=.0005
+
+New Transformer.TR645 	phases=1 	windings=2 	xhl=0.0001
+~ wdg=1 bus=645.2     	conn=wye    kV=4.16     kVA=225   %r=.0005
+~ wdg=2 bus=C645.2    	conn=wye    kV=0.38     kVA=225   %r=.0005
+
+New Transformer.TR646 	phases=2 	windings=2 	xhl=0.0001
+~ wdg=1 bus=646.2.3     conn=wye    kV=4.16     kVA=750   %r=.0005
+~ wdg=2 bus=C646.2.3    conn=wye    kV=0.38     kVA=750   %r=.0005
+
+New Transformer.TR652 	phases=1 	windings=2 	xhl=0.0001
+~ wdg=1 bus=652.1       conn=wye    kV=4.16     kVA=300   %r=.0005
+~ wdg=2 bus=C652.1      conn=wye    kV=0.38     kVA=300   %r=.0005
+
+New Transformer.TR670 	phases=3 	windings=2 	xhl=0.0001
+~ wdg=1 bus=670         conn=wye    kV=4.16     kVA=300   %r=.0005
+~ wdg=2 bus=C670        conn=wye    kV=0.38     kVA=300   %r=.0005
+
+New Transformer.TR671 	phases=3 	windings=2 	xhl=0.0001
+~ wdg=1 bus=671         conn=wye    kV=4.16     kVA=1500  %r=.0005
+~ wdg=2 bus=C671        conn=wye    kV=0.38     kVA=1500  %r=.0005
+
+New Transformer.TR675 	phases=3 	windings=2 	xhl=0.0001
+~ wdg=1 bus=675         conn=wye    kV=4.16     kVA=2000   %r=.0005
+~ wdg=2 bus=C675        conn=wye    kV=0.38     kVA=2000   %r=.0005
+
+// New Transformer.TR680 	phases=3 	windings=2 	xhl=2
+// ~ wdg=1 bus=680         conn=wye    kV=4.16     kVA=100   %r=.55
+// ~ wdg=2 bus=C680        conn=wye    kV=0.38     kVA=100   %r=.55
+
+New Transformer.TR692 	phases=2 	windings=2 	xhl=0.0001
+~ wdg=1 bus=692.3.1     conn=wye    kV=4.16     kVA=500   %r=.0005
+~ wdg=2 bus=C692.3.1    conn=wye    kV=0.38     kVA=500   %r=.0005

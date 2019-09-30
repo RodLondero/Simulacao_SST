@@ -1,0 +1,23 @@
+// ---------------------------------------------------------------------
+// Monitores das cargas
+// ---------------------------------------------------------------------
+New Monitor.634a_Potencia 	element=Load.634a  			terminal=1 mode=1  ppolar=no
+New Monitor.634a_Tensao  	element=Load.634a  			terminal=1 mode=0  ppolar=no
+New Monitor.634a_Tensao_MT 	element=Transformer.TR634  	terminal=1 mode=0  ppolar=no
+
+
+New Monitor.634b_Potencia 	element=Load.634b  			terminal=1 mode=1  ppolar=no
+New Monitor.634b_Tensao  	element=Load.634b  			terminal=1 mode=0  ppolar=no
+New Monitor.634b_Tensao_MT 	element=Transformer.TR634  	terminal=1 mode=0  ppolar=no
+
+New Monitor.634c_Potencia 	element=Load.634c  			terminal=1 mode=1  ppolar=no
+New Monitor.634c_Tensao  	element=Load.634c  			terminal=1 mode=0  ppolar=no
+New Monitor.634c_Tensao_MT 	element=Transformer.TR634  	terminal=1 mode=0  ppolar=no
+
+New Monitor.645_Potencia   	element=load.645  			terminal=1 mode=1  ppolar=no
+New Monitor.645_Tensao     	element=load.645  			terminal=1 mode=0  ppolar=no
+New Monitor.645_Tensao_MT 	element=Transformer.TR645  	terminal=1 mode=0  ppolar=no
+
+New Monitor.671_Potencia  	element=load.671  			terminal=1 mode=1  ppolar=no
+New Monitor.671_Tensao	  	element=load.671  			terminal=1 mode=0  ppolar=no
+New Monitor.671_Tensao_MT 	element=Transformer.TR671  	terminal=1 mode=0  ppolar=no

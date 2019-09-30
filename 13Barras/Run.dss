@@ -1,0 +1,6 @@
+Compile "E:\Google Drive\Engenharia Elétrica\10º Semestre\TCC\TCC - Rodolfo\Simulação\13Barras\OpenDSS\Master.dss"
+Export Elempowers
+
+
+Compile "C:\OpenDSS\Examples\Paulo_Example\DSSFiles\Run13BarrasPaulo.dss"
+Export Elempowers
