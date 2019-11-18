@@ -1,0 +1,31 @@
+Clear
+
+New Circuit.Simple     ! Creates voltage source  (Vsource.Source)
+Edit Vsource.Source BasekV=115 pu=1.05  ISC3=3000  ISC1=2500  !Define source V and Z
+
+New Transformer.TR_Sub XHL=10
+~ Buses=[SourceBus  Barra1  ] 
+~ Conns=[Delta      Wye     ] 
+~   kVs=[115        13.8    ]
+~  kVAs=[20000      20000   ] 
+
+New Linecode.336ACSR R1=0.058 X1=.1206 R0=.1784 X0=.4047 C1=3.4 C0=1.6 Units=kft
+
+New Line.Linha Bus1=Barra1 Bus2=Barra2 Linecode=336ACSR Length=1 Units=km 
+
+New Transformer.TR_Load XHL=10
+~ Buses=[Barra2     Barra3  ] 
+~ Conns=[Delta      Wye     ] 
+~   kVs=[13.8       0.38    ]
+~  kVAs=[20000      20000   ] 
+
+New Load.Carga Bus1=Barra3 kV=.38 kW=5000 PF=.95
+
+//Set Voltagebases=[115, 13.8, .38]
+//calcvoltagebases
+
+//Solve
+
+// Show Voltages LN Nodes
+// Show Currents Element
+// Show Powers kVA Elements

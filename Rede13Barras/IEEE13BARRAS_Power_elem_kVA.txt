@@ -1,0 +1,15 @@
+
+CIRCUIT ELEMENT POWER FLOW
+
+(Power Flow into element from indicated Bus)
+
+Power Delivery Elements
+
+  Bus     Phase     kW     +j   kvar         kVA         PF
+
+ELEMENT = "Vsource.SOURCE"
+SOURCEBUS     1     -1662.3 +j  -1275.4     2095.2       0.7934
+SOURCEBUS     2     -2227.9 +j  -1062.5     2468.3       0.9026
+SOURCEBUS     3     -2129.5 +j  -1658.7     2699.3       0.7889
+   TERMINAL TOTAL . -6019.8 +j  -3996.6     7225.7       0.8331
+SOURCEBUS     0         0.0 +j      0.0        0.0    

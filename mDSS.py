@@ -4,7 +4,7 @@ Created on Mon Sep 30 21:03:51 2019
 
 @author: Rodolfo
 """
-import dss, os, sys
+import dss, os, sys, time
 import tkinter
 from tkinter import messagebox
 
@@ -44,7 +44,7 @@ class mDSS(object):
                     self.dir_plots          = self.dir_principal + "Plots"
                     
                     self.dssObj.DataPath    = self.dir_principal
-                    os.chdir("..")
+                    #os.chdir("..")
                 except:
                     raise Exception("Erro ao criar interfaces!")
                     
@@ -58,12 +58,38 @@ class mDSS(object):
             
     def versao_DSS(self):
         return self.dssObj.Version
-
+    
     def compila_DSS(self):
         # Limpar informações da última simulação
-        self.dssObj.ClearAll()
-        self.dssText.Command = "Compile \"" + self.dssFileName + "\""
-        os.chdir("..")
-        return self.dssText.Result
+        try:
+            self.dssObj.ClearAll()
+            self.dssText.Command = "Compile \"" + self.dssFileName + "\""
+            os.chdir("..")
+            return self.dssFileName + "\n" + 'Compilado com sucesso.'
+        except Exception as e:
+            return e.args[1];
+        
+    def showIsolated(self):
+        try:
+            time.sleep(0.5)
+            self.dssText.Command = "show Isolated"
+            pass
+        except Exception as e:
+            return e.args[1];
+        
+    def showPowerskVAElements(self):
+        try:
+            time.sleep(0.5)
+            self.dssText.Command = "show Powers kva Elements"
+            return ''
+        except Exception as e:
+            return e.args[1];
+    
+    def showVoltagesLNElements(self):
+        try:
+            time.sleep(0.5)
+            self.dssText.Command = "Show Voltage LN Elements"
+        except Exception as e:
+            return e.args[1];
     
         
