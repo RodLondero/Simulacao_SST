@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 import numpy as np
 
+
 def setRede(rede: int):
     redes = {0: 'RedeBasica',
-             1: 'Rede13Barras'}    
+             1: 'Rede13Barras'}
     return redes[rede]
 
-def zeros(linhas, colunas = None):
+
+def zeros(linhas, colunas=None):
     """ Cria uma matriz/vetor de zero
 
     :param linhas: número de linhas da matriz
@@ -16,7 +18,8 @@ def zeros(linhas, colunas = None):
         return np.zeros(linhas)
     else:
         return np.zeros([linhas, colunas])
-    
+
+
 def calculaFP(p, q):
     """ Realiza o cálculo do Fator de Potência
 
@@ -26,13 +29,12 @@ def calculaFP(p, q):
     if type(p) in [int, float, np.float64]:
         # s = abs(np.complex(p, q))
         # fp = abs(p) / s
-        angulo = np.arctan(q/p)
+        angulo = np.arctan(q / p)
         fp = np.cos(angulo)
     else:
         fp = []
         for i in range(0, len(p)):
             # s = np.complex(p[i], q[i])
-            angulo = np.arctan(q[i]/p[i])
+            angulo = np.arctan(q[i] / p[i])
             fp.append(np.cos(angulo))
-    return fp 
-
+    return fp
