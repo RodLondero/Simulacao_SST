@@ -1,0 +1,5 @@
+// ---------------------------------------------------------------------
+// Monitores da Subestação
+// ---------------------------------------------------------------------
+New Monitor.Subestacao_Potencia element=Transformer.Subestacao  terminal=1 mode=1 ppolar=no
+New Monitor.Subestacao_Tensao   element=Transformer.Subestacao  terminal=1 mode=0 ppolar=no

@@ -1,0 +1,89 @@
+
+CIRCUIT ELEMENT POWER FLOW
+
+(Power Flow into element from indicated Bus)
+
+Power Delivery Elements
+
+  Bus  Phase     kW     +j   kvar         kVA         PF
+
+ELEMENT = "Vsource.SOURCE"
+BARRA1     1       -28.0 +j      5.8       28.6      -0.9789
+BARRA1     2       -28.0 +j      5.8       28.6      -0.9789
+BARRA1     3       -28.0 +j      5.8       28.6      -0.9789
+   TERMINAL TOTAL   -83.9 +j     17.5       85.7      -0.9789
+BARRA1     0         0.0 +j      0.0        0.0       1.0000
+BARRA1     0         0.0 +j      0.0        0.0       1.0000
+BARRA1     0         0.0 +j      0.0        0.0       1.0000
+   TERMINAL TOTAL     0.0 +j      0.0        0.0       1.0000
+
+ELEMENT = "Vsource.FONTESST_CARGA"
+BARRA5     1       -27.0 +j    -17.7       32.3       0.8364
+BARRA5     2       -27.0 +j    -17.7       32.3       0.8364
+BARRA5     3       -27.0 +j    -17.7       32.3       0.8364
+   TERMINAL TOTAL   -81.0 +j    -53.1       96.9       0.8364
+BARRA5     0         0.0 +j      0.0        0.0       1.0000
+BARRA5     0         0.0 +j      0.0        0.0       1.0000
+BARRA5     0         0.0 +j      0.0        0.0       1.0000
+   TERMINAL TOTAL     0.0 +j      0.0        0.0       1.0000
+
+ELEMENT = "Transformer.SUBESTACAO"
+BARRA1     1        28.0 +j     -5.8       28.6      -0.9789
+BARRA1     2        28.0 +j     -5.8       28.6      -0.9789
+BARRA1     3        28.0 +j     -5.8       28.6      -0.9789
+BARRA1     0         0.0 +j      0.0        0.0       1.0000
+   TERMINAL TOTAL    83.9 +j    -17.5       85.7      -0.9789
+BARRA2     1       -28.0 +j      5.8       28.6      -0.9789
+BARRA2     2       -28.0 +j      5.8       28.6      -0.9789
+BARRA2     3       -28.0 +j      5.8       28.6      -0.9789
+BARRA2     0         0.0 +j      0.0        0.0       1.0000
+   TERMINAL TOTAL   -83.9 +j     17.5       85.7      -0.9789
+
+ELEMENT = "Line.LINHA1"
+BARRA2     1        28.0 +j     -5.8       28.6      -0.9789
+BARRA2     2        28.0 +j     -5.8       28.6      -0.9789
+BARRA2     3        28.0 +j     -5.8       28.6      -0.9789
+   TERMINAL TOTAL    83.9 +j    -17.5       85.7      -0.9789
+BARRA3     1       -27.5 +j      2.9       27.6      -0.9946
+BARRA3     2       -27.5 +j      2.9       27.6      -0.9946
+BARRA3     3       -27.5 +j      2.9       27.6      -0.9946
+   TERMINAL TOTAL   -82.5 +j      8.6       82.9      -0.9946
+
+ELEMENT = "Line.LINHA2"
+BARRA3     1        27.5 +j     -2.9       27.6      -0.9946
+BARRA3     2        27.5 +j     -2.9       27.6      -0.9946
+BARRA3     3        27.5 +j     -2.9       27.6      -0.9946
+   TERMINAL TOTAL    82.5 +j     -8.6       82.9      -0.9946
+BARRA4     1       -27.0 +j      0.0       27.0      -1.0000
+BARRA4     2       -27.0 +j      0.0       27.0      -1.0000
+BARRA4     3       -27.0 +j      0.0       27.0      -1.0000
+   TERMINAL TOTAL   -81.0 +j      0.0       81.0      -1.0000
+
+= = = = = = = = = = = = = = = = = = =  = = = = = = = = = = =  = =
+
+Power Conversion Elements
+
+  Bus  Phase     kW   +j  kvar         kVA         PF
+
+ELEMENT = "Load.CARGA"
+BARRA5     1      36.5 +j   17.7       40.6       0.9000
+BARRA5     2      36.5 +j   17.7       40.6       0.9000
+BARRA5     3      36.5 +j   17.7       40.6       0.9000
+BARRA5     0       0.0 +j    0.0        0.0       1.0000
+  TERMINAL TOTAL    109.6 +j     53.1      121.8       0.9000
+
+ELEMENT = "Load.CARGASST_CARGA"
+BARRA4     1      27.0 +j    0.0       27.0       1.0000
+BARRA4     2      27.0 +j    0.0       27.0       1.0000
+BARRA4     3      27.0 +j    0.0       27.0       1.0000
+  TERMINAL TOTAL     81.0 +j      0.0       81.0       1.0000
+
+ELEMENT = "PVSystem.FV"
+BARRA5     1      -9.5 +j   -0.0        9.5       1.0000
+BARRA5     2      -9.5 +j    0.0        9.5       1.0000
+BARRA5     3      -9.5 +j    0.0        9.5       1.0000
+BARRA5     0       0.0 +j    0.0        0.0       1.0000
+  TERMINAL TOTAL    -28.6 +j     -0.0       28.6       1.0000
+
+
+Total Circuit Losses =    2.9 +j  -17.5

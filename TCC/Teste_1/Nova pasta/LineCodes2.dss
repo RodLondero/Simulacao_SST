@@ -1,0 +1,24 @@
+New LineCode.2CA_1  nphases=1 BaseFreq=60  R1=0.963  X1=0.467 Units=km normamps=152
+New LineCode.2CA_2  nphases=2 BaseFreq=60  R1=0.963  X1=0.467 Units=km normamps=152
+New LineCode.2CA_3  nphases=3 BaseFreq=60  R1=0.963  X1=0.467 Units=km normamps=152
+
+New LineCode.4CA_1  nphases=1 BaseFreq=60  R1=1.529  X1=0.496 Units=km normamps=114
+New LineCode.4CA_2  nphases=2 BaseFreq=60  R1=1.529  X1=0.496 Units=km normamps=114
+New LineCode.4CA_3  nphases=3 BaseFreq=60  R1=1.529  X1=0.496 Units=km normamps=114
+
+New LineCode.4CAA_1  nphases=1 BaseFreq=60  R1=1.597  X1=0.52 Units=km normamps=113
+New LineCode.4CAA_2  nphases=2 BaseFreq=60  R1=1.597  X1=0.52 Units=km normamps=113
+New LineCode.4CAA_3  nphases=3 BaseFreq=60  R1=1.597  X1=0.52 Units=km normamps=113
+
+New LineCode.6CA_1  nphases=1 BaseFreq=60  R1=2.43  X1=0.502 Units=km normamps=80
+New LineCode.6CA_2  nphases=2 BaseFreq=60  R1=2.43  X1=0.502 Units=km normamps=80
+! New LineCode.6CA_3  nphases=3 BaseFreq=60  R1=2.43  X1=0.502 Units=km normamps=80
+
+
+New LineCode.Teste nphases=3 BaseFreq=60 normamps=80
+~ rmatrix = (1.679467 |-0.7505333 1.679467 |-0.7505333 -0.7505333 1.679467 )
+~ xmatrix = (0 | 0 | 0)
+~ cmatrix = (0 | 0 | 0)
+~ units=km
+
+New LineCode.6CA_3  nphases=3 BaseFreq=60  R1=2.43  X1=0 C1=0 Units=km normamps=80

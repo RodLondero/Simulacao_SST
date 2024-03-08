@@ -1,0 +1,57 @@
+New Circuit.Fonte basekv=115 pu=1.0 phases=3 bus1=Barra1
+~ MVAsc3=21e3 MVAsc1=20e3
+
+New Transformer.Subestacao phases=3 windings=2   xhl=0.0001 sub=y
+~ wdg=1 bus=Barra1  conn=delta  kV=115    kVA=100000   %r=0.0000005
+~ wdg=2 bus=Barra2  conn=delta  kV=13.8   kVA=100000   %r=0.0000005
+
+// Arranjos
+Redirect LineCodes2.dss
+
+// Linhas
+New Line.Linha1 phases=3 bus1=Barra2 bus2=Barra3 length=10 units=km linecode=6CA_3
+New Line.Linha2 phases=3 bus1=Barra3 bus2=Barra4 length=11 units=km linecode=6CA_3
+
+
+! 0.22*sqrt(3) = 0.38kV = 380V
+var @VL = (0.22 3 sqrt *)
+
+New Transformer.Trafo phases=3 windings=2 xhl=2
+~ wdg=1 bus=Barra4      conn=delta  kV=13.8   kVA=100   %r=.55
+~ wdg=2 bus=Barra5      conn=wye    kV="@VL"  kVA=100   %r=.55
+
+
+Transformer.Trafo.Wdg    = 1
+Transformer.Trafo.MinTap = 0.95
+Transformer.Trafo.MaxTap = 1.05
+Transformer.Trafo.NumTap = 3
+
+Transformer.Trafo.Wdg    = 2
+Transformer.Trafo.NumTap = 3
+Transformer.Trafo.MinTap = 0.95
+Transformer.Trafo.MaxTap = 1.05
+!
+! Transformer.Trafo.Wdg = 2
+! Transformer.Trafo.MinTap = 0.95
+! Transformer.Trafo.MaxTap = 1.05
+! Transformer.Trafo.NumTap = 3
+
+
+// Carga
+Redirect LoadShapes.dss
+
+New Load.Carga1 Bus1=Barra3   Phases=3 Conn=Wye  Model=1    kV=13.8  kW=100  kvar=0
+New Load.Carga2 Bus1=Barra5   Phases=3 Conn=delta  Model=1    kV="@VL"  kW=100  kvar=0
+
+
+// Medidores
+New EnergyMeter.Subestacao      element=Transformer.Subestacao  terminal=1
+
+Redirect Monitores.dss
+
+Set Voltagebases=[115, 13.8, "@VL", 0.22]
+calcvoltagebases
+
+!
+! !Plot monitor object=Tensao_Subestacao channels=(1 3 5) bases=("115000 3 sqrt /")
+!Plot monitor object= tensao_carga channels=(1 ) bases=(220)

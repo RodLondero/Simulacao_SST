@@ -1,0 +1,92 @@
+// these are local matrix line codes
+// corrected 9-14-2011
+
+// New linecode.601 nphases=3 BaseFreq=60
+// ~ rmatrix = (0.3465 | 0.1560 0.3375 | 0.1580 0.1535 0.3414 )
+// ~ xmatrix = (1.0179 | 0.5017 1.0478 | 0.4236 0.3849 1.0348 )
+// ~ units=mi
+
+// New linecode.602 nphases=3 BaseFreq=60
+// ~ rmatrix = (0.7526 | 0.1580 0.7475 | 0.1560 0.1535 0.7436 )
+// ~ xmatrix = (1.1814 | 0.4236 1.1983 | 0.5017 0.3849 1.2112 )
+// ~ units=mi
+
+// New linecode.603 nphases=2 BaseFreq=60
+// ~ rmatrix = (1.3238 | 0.2066 1.3294 )
+// ~ xmatrix = (1.3569 | 0.4591 1.3471 )
+// ~ units=mi
+
+// New linecode.604 nphases=2 BaseFreq=60
+// ~ rmatrix = (1.3238 | 0.2066 1.3294 )
+// ~ xmatrix = (1.3569 | 0.4591 1.3471 )
+// ~ units=mi
+
+// New linecode.605 nphases=1 BaseFreq=60
+// ~ rmatrix = (1.3292 )
+// ~ xmatrix = (1.3475 )
+// ~ units=mi
+
+// New Linecode.606 nphases=3  Units=mi
+// ~ Rmatrix=[0.791721  |0.318476   0.781649 |0.28345     0.318476   0.791721 ]
+// ~ Xmatrix=[0.438352  |0.0276838  0.396697 |-0.0184204  0.0276838  0.438352 ]
+// ~ Cmatrix=[383.948   |0  383.948          |0           0          383.948  ]
+
+// New linecode.607 nphases=1 BaseFreq=60
+// ~ rmatrix = (1.3425 )
+// ~ xmatrix = (0.5124 )
+// ~ cmatrix = [236]
+// ~ units=mi
+
+New linecode.601 nphases=3 BaseFreq=60 
+~ rmatrix = (0.2153 | 0.0969 0.2097 | 0.0982 0.0954 0.2121) 
+~ xmatrix = (0.6325 | 0.3117 0.6511 | 0.2632 0.2392 0.6430) 
+~ cmatrix = (10.3833 | -3.2894 9.8228 | -2.0759 -1.2225 9.2936)
+~ units=km 
+
+// 602
+
+New linecode.602 nphases=3 BaseFreq=60 
+~ rmatrix = (0.4676 | 0.0982 0.4645 | 0.0969 0.0954 0.4621 ) 
+~ xmatrix = (0.7341 | 0.2632 0.7446 | 0.3117 0.2392 0.7526 ) 
+~ cmatrix = (9.3931 | -1.7828 8.5369 | -2.7862 -1.0859 8.9508)
+~ units=km 
+
+// 603
+
+New linecode.603 nphases=2 BaseFreq=60 
+~ rmatrix = (0.8261 | 0.1284 0.8226) 
+~ xmatrix = (0.8370 | 0.2853 0.8431) 
+~ cmatrix = (7.7626 | -1.4833 7.6902)
+~ units=km 
+
+// 604
+
+New linecode.604 nphases=2 BaseFreq=60 
+~ rmatrix = (0.8226 | 0.1284 0.8261) 
+~ xmatrix = (0.8431 | 0.2853 0.8370) 
+~ cmatrix = (7.6902 | -1.4833 7.7626)
+~ units=km 
+
+// 605
+
+New linecode.605 nphases=1 BaseFreq=60 
+~ rmatrix = (0.8259) 
+~ xmatrix = (0.8373) 
+~ cmatrix = (7.4488)
+~ units=km
+
+// 606
+
+New linecode.606 nphases=3 BaseFreq=60 
+~ rmatrix = (0.4960 | 0.1883 0.4903 | 0.1770 0.1983 0.4898) 
+~ xmatrix = (0.2773 | 0.0204 0.2511 | -0.0089 0.0204 0.2773) 
+~ cmatrix = (159.6994 | 0 159.6994 | 0 0 159.6994)
+~ units=km 
+
+// 607
+
+New linecode.607 nphases=1 BaseFreq=60 
+~ rmatrix = (0.8242) 
+~ xmatrix = (0.3184) 
+~ cmatrix = (146.6753)
+~ units=km

@@ -1,0 +1,17 @@
+
+// ---------------------------------------------------------------------
+// Monitores da Subestação
+//----------------------------------------------------------------------
+New Monitor.Tensao_Subestacao   element=Transformer.Subestacao  terminal=1 mode=0 ppolar=no
+New Monitor.Potencia_Subestacao element=Transformer.Subestacao  terminal=1 mode=1 ppolar=no
+
+// ---------------------------------------------------------------------
+// Monitores das cargas
+//----------------------------------------------------------------------
+! New Monitor.Tensao_Carga1        element=Load.Carga1             terminal=1 mode=0 ppolar=no
+! New Monitor.Potencia_Carga1      element=Load.Carga1             terminal=1 mode=1 ppolar=no
+
+New Monitor.Tensao_Carga        element=Load.Carga             terminal=1 mode=0 ppolar=no
+New Monitor.Potencia_Carga      element=Load.Carga             terminal=1 mode=1 ppolar=no
+
+! New Monitor.Tensao_CargaSST     element=Load.CargaSST_Carga    terminal=1 mode=0 ppolar=no

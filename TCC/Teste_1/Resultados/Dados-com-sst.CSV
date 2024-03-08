@@ -1,0 +1,12 @@
+Potência Ativa (kW) - Barra 2;104,9355;;;;P (kw);Q (kvar);FP;V (p.u)
+Potência Reativa (kvar) - Barra 2;-8,0942;;;Barra 2 (MT);104,9355;-8,0942;0,9970;1
+Fator de Potência - Barra 2;0,9970;;;Barra 3 (MT);102,1173;-3,9219;0,9993;0,9735
+Perdas (kW) - Barra 2;0,00011;;;Barra 4 (MT);99,3087;0;1;0,9469
+Perdas (kW) - Linhas;5,6268;;;Barra 5 (BT);99,9999;0;1;1
+Potência Ativa (kW) - Barra 4;99,3087;;;Linhas (Perdas - kW);5,6268;;;
+Potência Reativa (kvar) - Barra 4;0;;;Barra 2 (Perdas - kW);0,0001;;;
+Fator de Potência - Barra 4;1,0000;;;;;;;
+Potência Ativa (kW) - Barra 5;99,9999;;;;;;;
+Potência Reativa (kvar) - Barra 5;0;;;;;;;
+Fator de Potência - Barra 5;1;;;;;;;
+Tensão (p.u) - Barra 5;1;;;;;;;
